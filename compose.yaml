@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:16.0'
+    environment:
+      - 'POSTGRES_DB=loans'
+      - 'POSTGRES_PASSWORD=loanssecret'
+      - 'POSTGRES_USER=jansen.ang'
+    ports:
+      - '5432:5432'
